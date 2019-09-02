@@ -1,0 +1,37 @@
+{% include 'master/base.html'%}
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/paragraph.css' %}">
+{% endblock %}
+
+{%block content%}
+    <section class="paragraph-container" style="margin-top:-45%;">
+    <div style="margin-top: 8%;">
+        <p >
+        *Hyphen,Abbreviatd word might not produce actual questions we predict <br>
+        *Since this is a model,it takes some time to process (<1 minutes)<br>
+        </p>
+
+    </div>
+    </section>
+    <section class="contact-container" style="margin-top:-40%; ">
+        <div style="margin-top:8%;">
+            <h1>INSERT A PARAGRAPH</h1> <hr>
+                <form  class="form" method="post" action="{% url 'paragraph'%}">
+                 <textarea name="paragraph" id="paragraph" cols="100" rows="20" ></textarea>
+
+                 </textarea>
+                {% csrf_token %}<br/>
+
+
+                    <button type="submit" >Generate Query</button>
+            </form>
+
+        </div>
+    </section>
+
+{%endblock%}
+
+
+
+

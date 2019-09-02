@@ -1,0 +1,113 @@
+{% include 'master/base.html'%}
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/project.css' %}">
+{% endblock %}
+
+{%block content%}
+    <section class="introduction-container" style="margin-top:-45%; " id="intro">
+        <div style="margin-top:8%;">
+            <h1>Introduction </h1> <hr>
+            <p>In today’s world, time is a major concern. Any product that can effectively reduce time and power consumption is accepted and appreciated. Natural language processing (NLP) is concerned with programming machines to understand and generate the natural language. NLP consists of two components: natural language understanding (NLU) and natural language generation (NLG).Thus this application is presenting a Question Generator System that can reduce time consumption by replacing the conventional method of question generation system which needs lesser man power. In this system natural language processing (NLP) transformation is done. The project is based on the automatic question generation system where the user gives the sentence or the paragraph and the system generates the questions from the given paragraph. This proposed system aims at the generation of questions as well as reducing the man power and time required for the same.</p>
+
+        </div>
+    </section>
+    <section class="obj-container" style="margin-top:-25%;">
+        <div style="margin-top: 8%;">
+            <h1>Objectives</h1><hr>
+            <p>The objective of the system is summarized as, to:
+            <ul style="circle">
+            <li>	Reduce conventional method of paper based question creation.</li>
+            <li> Reduce manpower and time consumption during question generation.</li>
+            <li>	Generate question from the given sentence/paragraph.</li>
+            <li>	Understand the processing of a sentence / word.</li>
+        </ul>
+        </p>
+        </div>
+    </section>
+    <section class="sys-container" style="margin-top:-30%;" id="system">
+        <div style="margin-top: 8%;">
+            <h1>Basic Concept </h1><hr>
+            <p >This module deals with the  Automated Question Generator (AQG) for English that defines a two steps process for question generation:
+            </p><ol type="i"><li> NLP Transformation and </li><li> Question Creation.</li></ol>
+            <p> In step (i), the text sentences are transformed into simpler straightforward declarative statements. This is done by applying some syntactical and grammatical operations. It has operations for transforming complex sentences into simple sentences and resolution of pronouns. Here we have developed some NLP tools to analyze the input sentences. The  NLP tool is used to auto sentence split, tokenize, and parse sentence resulting in Penn Treebank style. We have also used the Parts of Speech (POS) tagger which labels the words of a sentence as their POS. It also labels the proper nouns with their semantic classes (often just person, organization, and location). All of these are implemented in the NLP tool. In step (ii), these generated sentences are processed to generate questions by following some operations (Wh-movement, subject-auxiliary inversion, main verb decomposition , unused word marking ,validating questions etc.).
+            </p>
+            <h4>NLP Transformation </h4>
+            <ul type="circle">
+                <li>POS Tagger</li>
+                <li>Lemmatization</li>
+                <li>Name Entity Recognizer(NER)</li>
+                <li>Dependency Parser</li>
+                <li>Semantic Role Lebeler(SER)</li>
+
+            </ul>
+            <h4>Question Generation </h4>
+            <ul type="circle">
+                <li>Answer phrase selection and generation of question phrases for the selected answer phrase</li>
+                <li>Main verb decomposition</li>
+                <li>Subject-auxiliary inversion</li>
+                <li>Replacement of answer phrase with question phrase and placing at the beginning of the sentence</li>
+                <li>Post-process to ensure proper formatting </li>
+            </ul>
+        </div>
+    </section>
+    <section class="desgn-container" style="margin-top:-10%;" id="#system">
+    <div style="margin-top: 8%;">
+        <h1> System Design </h1><hr>
+        <img src="{% static 'img/design.jpg' %} ">
+    </div>
+    </section>
+    <section class="tools-container" style="margin-top:-10%;" id="tools">
+    <div style="margin-top: 8%;">
+
+        <h1> Tools </h1><hr>
+        <div id="boxes">
+            <div id="leftbox">
+        <h4>Front End Tools</h4>
+        <ul type="square">
+            <li>HTML</li>
+            <li>Draw.io</li>
+            <li>Python</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+        </ul>
+        </div>
+        <div id="rightbox">
+        <h4> Backend Tools</h4>
+        <ul type="square">
+            <li>PIP</li>
+            <li>Django</li>
+            <li>GitHub</li>
+            <li>NLTK</li>
+            <li>Spacy</li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="obj-container" style="margin-top:-30%;" id="ftenhance">
+        <div style="margin-top: 8%;">
+             <h1>Future Enhancement </h1> <hr>
+            <ul >
+            <li>Mathematical and regular expression can be improved for the system.</li>
+            <li>Comma, hyphen can be added to the system.</li>
+            <li>Various paragraphs questions with non-repetition  can be made.</li>
+            <li>Abbreviations can be introduced in the system.</li>
+            <li>Response time can be reduced in future.</li>
+            <li>Questions along with answer can be generated..</li>
+            <li>Inference rules can be implemented for deductive question generation.</li>
+            <li>Yes/No questions can be added further more.</li>
+
+
+        </ul>
+        </div>
+    </section>
+
+
+
+
+{%endblock%}
+
+
+
+

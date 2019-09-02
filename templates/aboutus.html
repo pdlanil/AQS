@@ -1,0 +1,44 @@
+{% include 'master/base.html'%}
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/aboutus.css' %}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+
+{%block content%}
+<section class="teams-container" id="team" style="margin-top: -40%;">
+            <div class="teams-heading">
+                    <h1>Our Team</h1>
+
+            </div>
+
+            <div class="teams-info">
+                <div>
+                    <img src="{% static 'img/team1.jpg' %}" alt="">
+                    <h2>Mr.Anil Poudel</h2>
+                    <p> BSc. CSIT</br>
+                        7th Semester<br>
+                        Symbol No:-7391
+                    </p>
+                </div>
+                <div>
+                    <img src="{% static 'img/team3.jpg' %}" alt="">
+                    <h2>Mr.Aashish Malla</h2>
+                    <p> BSc. CSIT</br>
+                        7th Semester</br>
+                        Symbol No:-7389
+                    </p>
+                </div>
+	            <div>
+                    <img src="{% static 'img/team2.jpg' %}" alt="">
+                    <h2>Mr.Binod Subedi</h2>
+                    <p> BSc. CSIT<br>
+                        7th Semester<br>
+                        Symbol No:-7397
+                    </p>
+                </div>
+
+
+            </div>
+    </section>
+
+{% endblock %}

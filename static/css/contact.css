@@ -1,0 +1,25 @@
+.contact-container{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact-container>div{
+    width: 40%;
+    min-height: 100%;
+    padding: 2%;
+    /* border: 1px solid red; */
+}
+
+.contact-container>div h1{
+    font-size: 2vw;
+    font-weight: 700;
+    color: #0B98D2;
+    display: block;
+}
+
+
+

@@ -1,0 +1,50 @@
+.introduction-container,.obj-container,.sys-container,.desgn-container,.tools-container{
+    width:100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.introduction-container>div,.obj-container>div,.sys-container>div,.desgn-container>div,.tools-container>div{
+    width: 60%;
+    min-height: 100%;
+    padding: 2%;
+    /* border: 1px solid red; */
+}
+
+.introduction-container>div h1,.obj-container>div h1,.sys-container>div h1,.desgn-container>div h1,.tools-container>div h1{
+    font-size: 2vw;
+    font-weight: 700;
+    color: #0B98D2;
+    display: block;
+}
+.introduction-container>div p,.obj-container>div p,ul>li ,.sys-container>div p,ol>li,ul>li,.tools-container>div>ul>li{
+    color: #d58512;
+}
+.desgn-container div>img{
+    height: auto;
+    width: 100%;
+}
+.tools-container>div>h4{
+    color: #761c19;
+}
+.tools-container{
+    width:100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: left;
+}
+ #leftbox {
+     float: left;
+ }
+ #rightbox {
+     float: right;
+ }
+
+
+
+

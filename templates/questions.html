@@ -1,0 +1,28 @@
+{% include 'master/base.html'%}
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{%block content%}
+    <section class="contact-container" style="margin-top:-40%; ">
+        <div style="margin-top:8%;">
+            <h1>Questions</h1> <hr>
+                <form  class="form" >
+                    <div class="panel-body">
+                <ul>
+                    {% for q in question %}
+                    <li>{{q}}</li>
+                    {% endfor %}
+                </ul>
+                    </div>
+                </form>
+
+        </div>
+    </section>
+
+{%endblock%}
+
+
+
+

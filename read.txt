@@ -1,0 +1,15 @@
+#Pattern recognition is the process of recognizing patterns by using machine learning algorithm. Pattern recognition can be defined as the classification of data based on knowledge already gained or on statistical information extracted from patterns and/or their representation. One of the important aspects of the pattern recognition is its application potential.
+Examples: Speech recognition, speaker identification, multimedia document recognition (MDR), automatic medical diagnosis.
+In a typical pattern recognition application, the raw data is processed and converted into a form that is amenable for a machine to use. Pattern recognition involves classification and cluster of patterns.
+
+    In classification, an appropriate class label is assigned to a pattern based on an abstraction that is generated using a set of training patterns or domain knowledge. Classification is used in supervised learning.
+    Clustering generated a partition of the data which helps decision making, the specific decision making activity of interest to us. Clustering is used in an unsupervised learning.
+
+
+#semantic neural network
+#NLP
+#NFA
+
+As we can see that various entities are connected with each other along with the relationship mentioned. Many user can interact with many users. Thus, many-many relationship is maintained. Each entity has its own attribute. Also, the cardinality is maintained
+
+Pashupatinath Temple is one of the eight UNESCO Cultural Heritage Sites of the Kathmandu Valley.  It is also a cremation site where the last rites of Hindus are performed. The rituals of cremation is not for the faint hearted; still visitors are seen watching curiously from across the river from the hillside. Visit Pashupatinath Temple for an out-of-this-world experience.

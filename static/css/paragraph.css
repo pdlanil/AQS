@@ -1,0 +1,35 @@
+.contact-container,.paragraph-container{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact-container>div{
+    width: 50%;
+    min-height: 120%;
+    padding: 2%;
+    /* border: 1px solid red; */
+}
+
+.contact-container>div h1{
+    font-size: 2vw;
+    font-weight: 700;
+    color: #0B98D2;
+    display: block;
+}
+.paragraph-container>div{
+    width: 50%;
+    min-height: 120%;
+    padding: 2%;
+}
+
+.paragraph-container>div>p{
+    color: #d58512;
+}
+
+
+
+

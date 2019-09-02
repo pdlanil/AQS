@@ -1,0 +1,26 @@
+{% extends 'master/base.html' %}
+{% load staticfiles %}
+
+{% block 'title' %}Home page
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+ {% block content %}
+<section class="slider-container" style="margin-top: -50%">
+    <div id="slider">
+        <figure>
+            <img src="{%  static 'img/nlp1.jpeg' %}" alt="Slider image1">
+            <img src="{%  static 'img/nlp2.jpeg' %}" alt="Sider image2">
+            <img src="{%  static 'img/nlp3.jpeg' %}" alt="Slider image3">
+            <img src="{%  static 'img/nlp4.jpeg' %}" alt="Slider image4">
+            <img src="{% static 'img/nlp5.jpeg' %}" alt="Slider image5">
+        </figure>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+
+
+

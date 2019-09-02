@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<section class="header">
+        <section class="top-header">
+
+                <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+
+                <div class="address">
+                    <span><i class="fas fa-map-marker-alt adr-icon"></i>Bafal, Kathmandu, Nepal</span>
+                    <span><i class="fas fa-phone adr-icon"></i>9818920053</span>
+
+                </div>
+            </section>
+
+            <section class="down-header">
+                <div class="logo">
+                    <a href="{% url 'paragraph' %}"><img src="{% static 'img/logo2.jpg' %} "></a>
+                </div>
+
+                <div class="nav-menu">
+                    <ul>
+                         <li class="dropper"><a href="{% url 'project' %}">Project Basics<i class="fas fa-caret-down" style="margin-left:1px;"></i></a>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li><a href="#">Introduction</a></li>
+                                        <li><a href="#">System Design</a></li>
+                                        <li><a href="#">Tools </a></li>
+                                        <li><a href="#">Future Enhancement</a></li>
+                                    </ul>
+
+
+                            </div>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'aboutus' %}"> About us </a></li>
+                        <li><a href="http://www.google.com"><i class="fas fa-search"></i></a></li>
+
+
+                    </ul>
+                </div>
+            </section>
+
+</section>
